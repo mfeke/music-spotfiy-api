@@ -1,0 +1,34 @@
+
+img{
+    width: 165px;
+    height: 165px;
+    border-radius: 10px;
+}
+
+.col-6{
+    width: 160px !important;
+}
+
+.ml{
+    margin-right: 15px;
+}
+.w{
+    width: 100%;
+    overflow:scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  .br{
+    border-radius: 100%;
+  }
+  .t{
+    font-size: 14px;
+    max-height: 40px;
+    overflow: hidden;
+  }
+  .b{
+    border-radius: 30px;
+    font-size: 13px;
+  }

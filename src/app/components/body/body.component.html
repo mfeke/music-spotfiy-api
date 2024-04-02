@@ -1,0 +1,33 @@
+<div class="container">
+    <h3 class="mt-2">Amapiano artists</h3>
+</div>
+<div class="container ">
+    <div class="d-flex w">
+        <div class="col-6 text-dark ml" routerLink="/artist/{{artist.id}}" *ngFor="let artist of afrobeatArtist">
+            <img src="{{artist.image}}" alt="">
+            <b><p  class="text-white mt-1 px-1  ">{{artist.name}}</p></b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="d-flex w-100 justify-content-between ">
+        <h3 class="mt-2">New releases</h3>
+        <div class="bord mt-2">
+           <button type="button" class="btn  border p-1 px-3 b text-white">More</button>
+        </div>
+    </div>
+</div>
+<div class="container mt-2">
+    <div class="d-flex w pb-0">
+        <div class="col-6 text-dark ml " *ngFor="let album of newAlbums">
+            <img src="{{album.image}}" alt="">
+            <b><p  class="text-white mt-1 px-1 t mb-0  ">{{album.name}}</p></b>
+            <p class="text-secondary mb-0 t">Album • 
+                <ng-container *ngFor="let artist of album.artists; let last = last">
+                  <span>{{artist.name}}</span>
+                  <span *ngIf="!last"> & </span>
+                </ng-container>
+              </p>        
+            </div>
+    </div>
+</div>

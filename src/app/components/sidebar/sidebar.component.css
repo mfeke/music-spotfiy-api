@@ -1,0 +1,30 @@
+.text{
+    font-weight: 400;
+}
+.m{
+    margin-top: 2px;
+}
+.text-1{
+    font-size: 18px;
+}
+.w{
+    width: 320px;
+}
+.br{
+    border-radius: 10px;
+}
+.b{
+    font-weight: 700;
+    border-radius: 40px;
+}
+.height{
+    height: 190px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.btn:hover{
+    color: #000;
+}
+.w-10{
+    width: 320px;
+}
