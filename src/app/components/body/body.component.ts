@@ -23,7 +23,7 @@ export class BodyComponent {
 
           return {id , name , image}
         })
-        console.log(data)
+        // console.log(data)
         this.afrobeatArtist = artists.slice(0,10)
       }
     })

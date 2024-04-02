@@ -1,0 +1,25 @@
+.img-profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+.bg{
+    background-color: rgb(88, 85, 85); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(32, 32, 32), black);
+}
+p{
+    font-size: 15px;
+}
+.b{
+    border-radius: 30px;
+    font-size: 13px;
+  }
+
+  .track-p{
+    width: 60px;
+    height: 50x;
+    border-radius: 5px;
+  }
+  .f{
+    font-weight: 400;
+  }

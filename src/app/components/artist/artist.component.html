@@ -1,1 +1,22 @@
-<p>artist works!</p>
+<div class="bg">
+    <div class="container w-100  d-flex justify-content-center ">
+        <img src="{{artist.image}}" class="img-profile mt-4" alt="">
+    </div>
+    <div class="container mt-3">
+        <h1>{{artist.name}}</h1>
+        <p class="text-secondary">{{artist.followers |number}} <span>followers</span></p>
+        <div class="bord mt-2">
+            <button type="button" class="btn  border p-1 px-3 b text-white">Follow</button>
+         </div>
+    </div>
+    <div class="container mt-3">
+        <h4>Popular</h4>
+        <div class="col mb-3" *ngFor="let track of tracks">
+            <div class="d-flex">
+                <img src="{{track.image}}" class="track-p" alt="">
+                <p class="mx-3 f">{{track.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+

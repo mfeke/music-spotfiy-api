@@ -73,6 +73,23 @@ export class EndpointService {
     return this.http.get<any>(`${this.api}artists/${id}/related-artists`,{headers:headers} )
 
   }
+  agetArtistToptracks(id:any){
+
+    let accessToken = sessionStorage.getItem('access_token');
+    const headers = new HttpHeaders()
+    .append('Authorization', 'Bearer ' + accessToken)
+    .append('Content-Type', 'application/json');
+    return this.http.get<any>(`${this.api}artists/${id}/top-tracks`,{headers:headers} )
+  }
+  agetArtistRelated(id:any):Observable<any>{
+   // https://api.spotify.com/v1/artists/{id}/related-artists
+
+   let accessToken = sessionStorage.getItem('access_token');
+   const headers = new HttpHeaders()
+   .append('Authorization', 'Bearer ' + accessToken)
+   .append('Content-Type', 'application/json');
+   return this.http.get<any>(`${this.api}artists/${id}/related-artists`,{headers:headers} )
+  }
   agetArtist(id:any):Observable<any>{
     let accessToken = sessionStorage.getItem('access_token');
     const headers = new HttpHeaders()
